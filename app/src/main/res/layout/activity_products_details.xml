@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.ProductsDetails">
+    <ScrollView
+        android:id="@+id/scrollView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/cartB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="385dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp"
+                android:background="#5E434343"
+                android:contentDescription="@+string/Product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="385dp"
+                android:layout_height="60dp"
+                android:text="Product_name"
+                android:textColor="#514D4D"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/descp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:text="$$$"
+                android:textColor="#514D4D"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/pname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descp"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:textAlignment="center"
+                android:text="Description of Product"
+                android:textColor="#514D4D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/pname"
+                tools:ignore="MissingConstraints" />
+
+            <ListView
+                android:id="@+id/comments"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:textColor="#514D4D"
+                app:layout_constraintBottom_toBottomOf="@id/scrollView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descp"
+                tools:ignore="NotSibling"
+                tools:layout_editor_absoluteX="179dp" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:text="       -/5 "
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/descp"
+                app:layout_constraintTop_toBottomOf="@+id/pname"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/commentedit"
+        android:layout_width="393dp"
+        android:layout_height="73dp"
+        android:hint="write comment"
+        android:textColor="#514D4D"
+        android:textColorHint="#514D4D"
+        app:layout_constraintBottom_toTopOf="@+id/cartB"
+
+        />
+
+    <ImageButton
+        android:id="@+id/sends"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/baseline_send"
+        app:layout_constraintBottom_toTopOf="@+id/cartB"
+        app:layout_constraintEnd_toEndOf="@+id/commentedit" />
+    <Button
+        android:id="@+id/cartB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="Add to Cart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="24dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        />
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:abb_indicatorColor="#736B6B"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorMargin="16dp"
+        app:abb_selectedIndex="0"
+        app:abb_selectedTabType="icon"
+        app:abb_tabs="@menu/menu"
+        app:abb_textStyle="bold"
+        app:abb_tabColor="#565050"
+        app:abb_tabColorSelected="#565050"
+        app:abb_rippleEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

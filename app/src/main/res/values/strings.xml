@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Ecommerce App</string>
+    <string name="log_in">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="add_to_cart">Add to cart</string>
+    <!-- Strings for On Boarding Screen -->
+
+    <!--Titles-->
+    <string name="first_slide_title">20% Discount\nNew Arrival Product</string>
+    <string name="second_slide_title">Take Advantage\nOf The Offer Shopping</string>
+    <string name="third_slide_title">All Types Offers\nWithin Your Reach</string>
+
+    <!--Descriptions-->
+    <string name="slide_desc">Publish up your selfies to make yourself more beautiful with this app. </string>
+    <!--Buttons-->
+    <string name="next_btn">Next</string>
+    <string name="create_an_new_account">create an new account</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="by_creating_an_account"><![CDATA[By creating an account you have to agree with out them & condication.]]></string>
+    <string name="continue_with_facebook">Continue with <b>Facebook</b></string>
+    <string name="continue_with_google">Continue with <b>Google</b></string>
+    <string name="continue_with_apple">Continue with <b>Apple</b></string>
+    <string name="welcome">Welcome!</string>
+    <string name="please_login">please login or sing up to continue our app</string>
+    <string name="or">or</string>
+    <string name="BirthDate">Birth Date</string>
+    <string name="successful">Successful!</string>
+    <string name="web_client_id">800775535656-rqnr79ht6vi8u2jq660cuti1gfd9vak9.apps.googleusercontent.com</string>
+    <string name="title_activity_delivary_map">Delivary_Map</string>
+    <string name="index_menu">0</string>
+
+</resources>

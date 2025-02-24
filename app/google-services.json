@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876139773256",
+    "project_id": "ecommerce-app-df2f1",
+    "storage_bucket": "ecommerce-app-df2f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876139773256:android:c97459d7c84333e73d077d",
+        "android_client_info": {
+          "package_name": "com.nada.ecommerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876139773256-e2b6ua1cvb3plnmss2iuv5tsrj8g62tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc84Z4__uk84AeFuxtH0lhDNKEEsDAmxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876139773256-e2b6ua1cvb3plnmss2iuv5tsrj8g62tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    tools:context=".ui.Admin_Add_Update_Delete">
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:hint="ID"
+        android:inputType="number"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/gray"
+
+        android:hint="Category"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/NameProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Category"
+        android:layout_marginTop="2dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+
+        android:hint="Name"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NameProduct"
+        android:layout_marginTop="6dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Amount"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/Descriebtion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Amount"
+        android:layout_marginTop="2dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+
+        android:hint="Description"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Descriebtion"
+        android:layout_marginTop="2dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Price"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="-2dp"
+        android:text="Add New Item"
+        android:textSize="16dp"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="40dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsert"
+        android:layout_marginTop="-3dp"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="40dp"
+        android:textColor="@color/white"
+        android:text="Edit"
+        android:textSize="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="40dp"
+        android:textColor="@color/white"
+        android:text="Delete"
+        android:textSize="16dp"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="392dp"
+        android:layout_height="171dp"
+        android:layout_alignBottom="@+id/Category"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="103dp"
+        android:background="@color/grey"
+        android:padding="5dp"
+        app:shapeAppearanceOverlay="@style/rectangular"
+        app:srcCompat="@drawable/ic_baseline_checkroom_24"
+        app:strokeColor="@color/black"
+        app:strokeWidth="5dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="83dp"
+        android:layout_height="49dp"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="-4dp"
+        android:clickable="true"
+        android:importantForAccessibility="no"
+        android:tint="@color/grey"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+    />
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FFF"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorColor="#736B6B"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorMargin="16dp"
+        app:abb_rippleEnabled="true"
+        app:abb_selectedIndex="0"
+        app:abb_selectedTabType="icon"
+        app:abb_tabColor="#565050"
+        app:abb_tabColorSelected="#565050"
+        app:abb_tabs="@menu/menu"
+        app:abb_textStyle="bold"
+        />
+</RelativeLayout>
